@@ -1,0 +1,183 @@
+/********************** GENERAL *****************/
+* {
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Montserrat', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+p {
+	color: #000;
+}
+.container {
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+.active {
+	background-color: #262626;
+	border-radius: 3px;
+}
+img {
+	width: 100%;
+}
+.title {
+	font-size: 1.3rem;
+}
+/********************** HEADER ******************/
+header {
+	background-color: #262626;
+	text-align: center;
+}
+header .logo-container {
+	padding: 0px;
+}
+header img {
+	width: 360px;
+	height: 320px;
+}
+/*********************** NAVIGATION ****************/
+nav {
+	background-color: #0d0d0d;
+	padding: 10px;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+nav li {
+	display: inline-block;
+}
+nav li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	font-size: 16px;
+
+}
+/************************* GALLERY ********************/
+#gallery {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#gallery img {
+	width: 100%;
+}
+#gallery .item {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+#gallery .caption {
+	background-color: #f0f0f0;
+	padding: 10px;
+}
+#gallery .caption p {
+	margin: 0;
+}
+#gallery .picture {
+	line-height: 0;
+}
+/************************* ABOUT **********************/
+#about img {
+	border-radius: 100%;
+	padding: 25px 0;
+}
+/*********************** CONTATTI ************************/
+#contatti ul {
+	list-style-type: none;
+	padding: 0;
+}
+#contatti li {
+	padding: 5px 0;
+}
+/************************* FOOTER *********************/
+footer.main {
+	text-align: center;
+	padding: 15px;
+}
+footer.main img {
+	width: 24px;
+}
+footer.main a {
+	display: inline-block;
+	padding: 5px 10px;
+}
+footer.main p {
+	font-size: 0.75rem;
+}
+/******************** RESPONSIVE DESIGN ***************/
+@media only screen and (max-width: 400px) {
+
+/************************* GALLERY ********************/
+#gallery .item {
+	width: 100%;
+}
+
+}
+@media only screen and (min-width: 768px) {
+/*********************** ABOUT ************************/	
+#about img {
+	width: 70%;
+}
+#about .profile-pic {
+	float: left;
+	width: 50%;
+	padding: 15px;
+	text-align: center;
+}
+#about .description {
+	float: right;
+	width: 50%;
+	padding: 30px 15px 15px;
+}
+/*********************** CONTATTI ************************/
+#contatti .info {
+	float: left;
+	width: 70%;
+	padding: 15px;
+}
+#contatti .contatti {
+	float: right;
+	width: 30%;
+	padding: 15px;
+}
+#contatti .material-symbols-outlined {
+	float: left;
+}
+#contatti .contatti a {
+	margin: 3px 0 0 5px;
+	display: inline-block;
+}
+
+
+
+}
+
+@media only screen and (min-width: 992px) {
+	nav li:hover {
+		background-color: #262626;
+		border-radius: 3px;
+	}
+	nav li {
+		transition: background .3s;
+	}
+	#gallery .item:hover {
+		opacity: .7;
+	}
+	#gallery .item {
+		transition: opacity .3s;
+	}
+
+}
